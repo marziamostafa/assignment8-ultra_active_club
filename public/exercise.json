@@ -1,0 +1,56 @@
+[
+  {
+    "id": "63346bbd13542423a192e070",
+    "age": "20-35",
+    "info": "Dumbbells for full-body, multiplanar movements.It can provide a variety of strength outcomes.",
+    "picture": "https://cdn.mos.cms.futurecdn.net/zHCXkZfA9FA7MXSCqx2ugL-300-80.jpg",
+    "time": 48,
+    "name": "Dumble",
+    "gender": "male"
+  },
+  {
+    "id": "63346bbd31e53d855d6d2c3a",
+    "age": "18-50",
+    "info": "Squats burn calories and might help you lose weight, also strengthens tendons, bones, and ligaments around the leg muscles",
+    "picture": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/squatb-1547503905.png?crop=0.953xw:1.00xh;0.0244xw,0&resize=300:*",
+    "time": 30,
+    "name": "Squats",
+    "gender": "female"
+  },
+  {
+    "id": "63346bbda64f5bc735f4aaca",
+    "age": "18-50",
+    "info": "Lunges increase muscle mass to build up strength and tone your body, especially your core, butt, and legs.",
+    "picture": "https://images.ctfassets.net/90pc6zknij8o/wNmQUKQQSkuOb4nOuHTZ6/f925977a47b6c222e9be1209135bcfbb/how-to-do-lunges.jpg?w=300&h=180&q=50&fit=fill&f=faces",
+    "time": 20,
+    "name": "Lunges",
+    "gender": "female"
+  },
+  {
+    "id": "63346bbdad8f784858e1766e",
+    "age": 23,
+    "info": " Burpees focus on a full-body calisthenics workout that aims to build muscle strength and endurance in both lower and upper body.",
+    "picture": "https://rachellawfitness.com/wp-content/uploads/2020/02/burpee-2.jpg",
+    "time": 32,
+    "name": "Burpees",
+    "gender": "female"
+  },
+  {
+    "id": "63346bbd1a9dd3c413d55a95",
+    "age": 24,
+    "info": "Traditional pushups are beneficial for building upper body strength. They work the triceps, pectoral muscles, and shoulders.",
+    "picture": "https://phantom-marca.unidadeditorial.es/efa9740df47cff7f9466ea78fd720074/crop/0x93/899x599/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/19/16426036798831.jpg",
+    "time": 21,
+    "name": "Push-ups",
+    "gender": "female"
+  },
+  {
+    "id": "63346bbd1a9dd3c413d55a96",
+    "age": 24,
+    "info": " It's better for functional strength and for people who do CrossFit, powerlifting, weightlifting, or Strongman.",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYK-PR96TVslnb3s3Est-2uI0oiAbsMECdLw&usqp=CAU",
+    "time": 21,
+    "name": "Standing overhead dumbbell presses",
+    "gender": "female"
+  }
+]

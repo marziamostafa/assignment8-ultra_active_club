@@ -1,0 +1,20 @@
+.all-activities {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+.exercise {
+    background-color: antiquewhite;
+}
+
+/* .exercise h2 {
+    text-align: start;
+} */
+
+.all-exercise {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 2rem;
+}
