@@ -1,7 +1,7 @@
 .exercise-cart {
     border: 1px solid black;
     height: 25em;
-    width: 19rem;
+    width: 17rem;
     position: relative;
 }
 
@@ -19,14 +19,14 @@
 
 .exercise-cart p {
     margin-bottom: .25rem;
-    margin-top: .25rem;
+    margin-top: .30rem;
 
 
 }
 
 .exercise-cart img {
     height: 10rem;
-    width: 19rem;
+    width: 17rem;
 }
 
 .btn-cart {

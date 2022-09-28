@@ -1,30 +1,36 @@
 .details {
     position: sticky;
     top: 0;
-    /* padding: 2rem 2rem; */
+    padding-top: .25rem;
+    padding-right: .25rem;
+    padding-left: .20rem;
     background-color: aliceblue;
-    margin: 0 1rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
     width: 100%;
 
+
 }
 
-.personal-info {
+.personal-detail {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 
 }
 
-.personal-info h4 {
+.personal-detail h4 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.personal-info p {
+.personal-detail p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.personal-info img {
+.personal-detail img {
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
@@ -34,4 +40,58 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+
+.buttons {
+    background-color: white;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    border-radius: 12px;
+    padding: 30px, 0;
+    /* padding-bottom: .25rem; */
+}
+
+.break button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    margin: .25rem;
+}
+
+h2 {
+    text-align: start;
+}
+
+.exercise-details {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: .25rem;
+    margin-left: .25rem;
+}
+
+.div1,
+.div2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/* .div2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 20px;
+} */
+
+.complete {
+    width: 100%;
 }

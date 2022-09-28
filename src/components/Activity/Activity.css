@@ -1,11 +1,14 @@
 .all-activities {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3.5fr 1fr;
+
+
 
 }
 
 .exercise {
     background-color: antiquewhite;
+    margin-left: 1rem;
 }
 
 /* .exercise h2 {
@@ -15,6 +18,14 @@
 .all-exercise {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-column-gap: 0rem;
+    gap: 3rem;
     margin: 4rem 2rem;
+    margin-left: 2rem;
+}
+
+.personal-info {
+    /* position: sticky;
+    top: 0; */
+    margin-right: 2rem;
 }
