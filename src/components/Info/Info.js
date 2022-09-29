@@ -14,7 +14,7 @@ const Info = (props) => {
     { id: 3, time: 30 },
     { id: 4, time: 40 }
     ]
-    // console.log(breakTime);
+    // console.log(cart);
     let quantity = 0;
     for (const product of cart) {
 
@@ -28,7 +28,7 @@ const Info = (props) => {
 
                 let field = document.getElementById('timing');
                 let second = values.time;
-                console.log(second);
+                // console.log(second);
                 field.innerText = second + 's';
 
             }
@@ -43,7 +43,15 @@ const Info = (props) => {
 
     useEffect(() => {
         const storedTime = getStoredTime();
-        console.log(storedTime)
+
+        for (const id in storedTime) {
+            const arr = Object.keys(storedTime);
+            const needId = arr.find(newid => id === newid);
+            console.log(needId)
+            const save = document.getElementById('timing');
+            save.innerText = id;
+        }
+
 
 
     }, [])
