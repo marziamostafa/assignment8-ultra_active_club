@@ -61,6 +61,8 @@
     border-radius: 50%;
     border: none;
     margin: .25rem;
+    background-color: rgb(205, 205, 205);
+    font-weight: 600;
 }
 
 h2 {
@@ -94,4 +96,9 @@ h2 {
 
 .complete {
     width: 100%;
+    background-color: cadetblue;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+
 }

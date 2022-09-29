@@ -1,7 +1,10 @@
 import React from 'react';
 import './info.css'
 
-const Info = () => {
+const Info = (props) => {
+    const { cart } = props;
+    console.log(cart);
+
     return (
         <div className='details'>
             <div className='personal-detail'>

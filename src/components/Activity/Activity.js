@@ -6,13 +6,19 @@ import './Activity.css'
 
 const Activity = () => {
     const [exercises, setexercise] = useState([])
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('exercise.json')
             .then(res => res.json())
             .then(data => setexercise(data))
 
     }, [])
+    // const handleAddToCart = (exercise) => {
+    //     console.log(exercise);
+    //     const newCart = [...cart, exercise];
+    //     setCart(newCart);
 
+    // }
     return (
         <div className='all-activities'>
             <div className='exercise'>
@@ -24,13 +30,14 @@ const Activity = () => {
                     {
                         exercises.map(exercise => <Exercise
                             key={exercise.id}
+                            // handleAddToCart={handleAddToCart}
                             exercise={exercise}></Exercise>)
                     }
                 </div>
 
             </div>
             <div className='personal-info'>
-                <Info></Info>
+                <Info cart={cart}></Info>
             </div>
         </div>
 

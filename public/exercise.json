@@ -22,7 +22,7 @@
     "age": "18-50",
     "info": "Lunges increase muscle mass to build up strength and tone your body, especially your core, butt, and legs.",
     "picture": "https://images.ctfassets.net/90pc6zknij8o/wNmQUKQQSkuOb4nOuHTZ6/f925977a47b6c222e9be1209135bcfbb/how-to-do-lunges.jpg?w=300&h=180&q=50&fit=fill&f=faces",
-    "time": 20,
+    "time": 120,
     "name": "Lunges",
     "gender": "female"
   },
@@ -31,7 +31,7 @@
     "age": 23,
     "info": " Burpees focus on a full-body calisthenics workout that aims to build muscle strength and endurance in both lower and upper body.",
     "picture": "https://rachellawfitness.com/wp-content/uploads/2020/02/burpee-2.jpg",
-    "time": 32,
+    "time": 120,
     "name": "Burpees",
     "gender": "female"
   },
@@ -40,7 +40,7 @@
     "age": 24,
     "info": "Traditional pushups are beneficial for building upper body strength. They work the triceps, pectoral muscles, and shoulders.",
     "picture": "https://phantom-marca.unidadeditorial.es/efa9740df47cff7f9466ea78fd720074/crop/0x93/899x599/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/19/16426036798831.jpg",
-    "time": 21,
+    "time": 30,
     "name": "Push-ups",
     "gender": "female"
   },
@@ -49,7 +49,7 @@
     "age": 24,
     "info": " It's better for functional strength and for people who do CrossFit, powerlifting, weightlifting, or Strongman.",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYK-PR96TVslnb3s3Est-2uI0oiAbsMECdLw&usqp=CAU",
-    "time": 21,
+    "time": 60,
     "name": "Standing overhead dumbbell presses",
     "gender": "female"
   }
