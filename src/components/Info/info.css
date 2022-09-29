@@ -86,13 +86,6 @@ h2 {
     border-radius: 15px;
 }
 
-/* .div2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    margin-top: 20px;
-} */
 
 .complete {
     width: 100%;
@@ -101,4 +94,61 @@ h2 {
     font-size: large;
     font-weight: 700;
 
+}
+
+
+/* for tab */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .details {
+
+        padding-right: 1rem;
+        padding-left: .20rem;
+        background-color: aliceblue;
+        margin-left: 1rem;
+        margin-top: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        margin-right: .25rem;
+
+
+    }
+
+    .div1,
+    .div2 {
+
+        justify-content: space-around;
+        align-items: center;
+        margin-right: .25rem;
+        padding-right: .20rem;
+    }
+
+}
+
+/* for mobile */
+
+@media screen and (max-width: 688px) {
+
+    .details {
+
+        padding-right: 1rem;
+        padding-left: .20rem;
+        background-color: aliceblue;
+        margin-left: 1rem;
+        margin-top: 0;
+        padding-bottom: 1rem;
+        width: 100%;
+        margin-right: .25rem;
+
+
+    }
+
+
+    .div1,
+    .div2 {
+
+        justify-content: space-around;
+        align-items: center;
+        margin-right: .25rem;
+        padding-right: .20rem;
+    }
 }

@@ -1,9 +1,6 @@
 .all-activities {
     display: grid;
     grid-template-columns: 3.5fr 1fr;
-
-
-
 }
 
 .exercise {
@@ -30,6 +27,47 @@
     margin-right: 2rem;
 }
 
-@media screen and (max-width: 688px) {}
 
-@media screen and (min-width:689px) and (max-width:992px) {}
+/* for tab */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .all-activities {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .all-exercise {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0rem;
+        gap: 4rem;
+        margin: 4rem 1rem;
+        margin-left: .5rem;
+    }
+
+    .personal-info {
+        margin-right: 1rem;
+    }
+
+}
+
+/* for mobile */
+
+@media screen and (max-width: 688px) {
+    .all-activities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .all-exercise {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0rem;
+        gap: 4rem;
+        margin: 4rem 1rem;
+        margin-left: .5rem;
+    }
+
+    .personal-info {
+        margin-right: .75rem;
+    }
+}
