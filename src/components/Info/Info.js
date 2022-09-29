@@ -1,4 +1,5 @@
 import React from 'react';
+import addToDb, { getStoredTime } from '../../utilities/fakedb';
 import './info.css'
 
 const Info = (props) => {
@@ -19,14 +20,34 @@ const Info = (props) => {
         for (const values of breakTime) {
 
             if (values.id === id) {
-                // console.log(values.time);
+
                 let field = document.getElementById('timing');
                 let second = values.time;
+                console.log(second);
                 field.innerText = second + 's';
 
             }
         }
 
+    }
+    // useEffect(() => {
+    //     const storedTime = getStoredTime();
+    //     const savedTime = [];
+    //     for (const id in storedTime) {
+    //         const addedTime= products.find(product => product.id === id)
+    //         if (addedTime) {
+    //             const quantity = storedTime[id];
+    //             addedTime.quantity = quantity;
+    //             savedTime.push(addedProduct)
+    //         }
+
+    //     }
+
+    //     setCart(savedCart)
+    // }, [p])
+    const addOnStorage = (id, time) => {
+
+        addToDb(id, time);
     }
 
 
@@ -50,7 +71,7 @@ const Info = (props) => {
                 <h2>Add a break</h2>
                 <div className='buttons'>
                     {
-                        breakTime.map(times => <button id='btn-colour' key={times.id} onClick={() => { showTime(times.id) }}>{times.time}S</button>)
+                        breakTime.map(times => <button id='btn-colour' key={times.id} onClick={() => { showTime(times.id); addOnStorage(times.id, times.time) }}>{times.time}S</button>)
                     }
 
                 </div>
@@ -63,7 +84,7 @@ const Info = (props) => {
                 </div>
                 <div className='div2'>
                     <h3>Break Time:</h3>
-                    <p id='timing'>20s</p>
+                    <p id='timing'></p>
                 </div>
             </div>
             <button className='complete'><p>Activity Completed</p></button>

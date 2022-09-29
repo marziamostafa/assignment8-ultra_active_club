@@ -29,3 +29,7 @@
     top: 0; */
     margin-right: 2rem;
 }
+
+@media screen and (max-width: 688px) {}
+
+@media screen and (min-width:689px) and (max-width:992px) {}

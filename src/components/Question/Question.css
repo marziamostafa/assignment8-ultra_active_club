@@ -1,0 +1,16 @@
+.questios {
+    margin: 2rem;
+}
+
+
+.questios div {
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: start;
+    margin-top: 2rem;
+    background-color: aquamarine;
+    border-radius: 15px;
+}
