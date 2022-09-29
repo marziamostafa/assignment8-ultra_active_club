@@ -1,11 +1,16 @@
-import React from 'react';
-import addToDb, { getStoredTime } from '../../utilities/fakedb';
-import './info.css'
+import React, { useEffect } from 'react';
+
+
+import './info.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { addToDb, getStoredTime } from '../../utilities/fakedb';
+
 
 const Info = (props) => {
     const { cart } = props;
     const breakTime = [{ id: 1, time: 10 },
-    { id: 2, time: 20 },
+    { id: 2, time: 20, quantity: 0 },
     { id: 3, time: 30 },
     { id: 4, time: 40 }
     ]
@@ -30,25 +35,29 @@ const Info = (props) => {
         }
 
     }
-    // useEffect(() => {
-    //     const storedTime = getStoredTime();
-    //     const savedTime = [];
-    //     for (const id in storedTime) {
-    //         const addedTime= products.find(product => product.id === id)
-    //         if (addedTime) {
-    //             const quantity = storedTime[id];
-    //             addedTime.quantity = quantity;
-    //             savedTime.push(addedProduct)
-    //         }
 
-    //     }
-
-    //     setCart(savedCart)
-    // }, [p])
     const addOnStorage = (id, time) => {
 
-        addToDb(id, time);
+        addToDb(id, time)
     }
+
+    useEffect(() => {
+        const storedTime = getStoredTime();
+        console.log(storedTime)
+
+
+    }, [])
+
+
+    const notify = () => toast("Yes!..You've done it", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
 
 
     return (
@@ -71,7 +80,7 @@ const Info = (props) => {
                 <h2>Add a break</h2>
                 <div className='buttons'>
                     {
-                        breakTime.map(times => <button id='btn-colour' key={times.id} onClick={() => { showTime(times.id); addOnStorage(times.id, times.time) }}>{times.time}S</button>)
+                        breakTime.map(times => <button id='btn-colour' key={times.id} onClick={() => { showTime(times.id); addOnStorage(times.id, times.time) }}>{times.time}s</button>)
                     }
 
                 </div>
@@ -87,7 +96,8 @@ const Info = (props) => {
                     <p id='timing'></p>
                 </div>
             </div>
-            <button className='complete'><p>Activity Completed</p></button>
+            <button onClick={notify} className='complete'><p>Activity Completed</p></button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

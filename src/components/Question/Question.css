@@ -14,3 +14,21 @@
     background-color: aquamarine;
     border-radius: 15px;
 }
+
+/* for tab */
+@media screen and (min-width:689px) and (max-width:992px) {}
+
+/* for mobile */
+
+@media screen and (max-width: 688px) {
+    .questios div {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+        margin-top: 2rem;
+
+    }
+}

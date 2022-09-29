@@ -10,7 +10,9 @@ function App() {
       <Activity></Activity>
       <Question></Question>
     </div>
+
   );
 }
 
 export default App;
+
