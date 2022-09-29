@@ -15,22 +15,17 @@ const Info = (props) => {
         quantity = quantity + product.time;
         console.log(quantity);
     }
-    let second = 0;
-
     const showTime = (id) => {
-
-
-
         for (const values of breakTime) {
 
             if (values.id === id) {
-                console.log(values.time)
+                // console.log(values.time);
+                let field = document.getElementById('timing');
+                let second = values.time;
+                field.innerText = second + 's';
+
             }
         }
-        // for (let i = 0; i < 4; i++) {
-        //     second = second + breakTime[0].time;
-        //     console.log(second)
-        // }
 
     }
 
@@ -55,12 +50,9 @@ const Info = (props) => {
                 <h2>Add a break</h2>
                 <div className='buttons'>
                     {
-                        breakTime.map(times => <button key={times.id} onClick={() => { showTime(times.id) }}>{times.time}S</button>)
+                        breakTime.map(times => <button id='btn-colour' key={times.id} onClick={() => { showTime(times.id) }}>{times.time}S</button>)
                     }
-                    {/* <button>10s</button>
-                    <button>20s</button>
-                    <button>30s</button>
-                    <button>40s</button> */}
+
                 </div>
             </div>
             <div className='exercise-details'>
@@ -71,7 +63,7 @@ const Info = (props) => {
                 </div>
                 <div className='div2'>
                     <h3>Break Time:</h3>
-                    <p>{showTime}</p>
+                    <p id='timing'>20s</p>
                 </div>
             </div>
             <button className='complete'><p>Activity Completed</p></button>
